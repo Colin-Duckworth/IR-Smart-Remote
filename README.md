@@ -1,5 +1,5 @@
 # IR-Smart-Remote
-IR Smart Remote using an Arduino Uno and various protocols (including NEC) to control HDMI Multiplexer, Optoma Projector, and wireless soundbar.
+IR Smart Remote using an Arduino Uno to control HDMI Multiplexer, Optoma Projector, and wireless soundbar using various protocols (including NEC).
 
 # Overview
 The IR Smart Remote utilizes an Arduino Uno board to interface with a variety of devices via infrared signals. The remote allows users to control multiple devices with a simple button interface. Key features of the design include the ability to store device states in EEPROM for persistent memory, support for a 9V battery for portability, and a modular setup to easily modify or add new IR signals.
