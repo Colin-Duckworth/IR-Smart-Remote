@@ -1,3 +1,5 @@
+//I am the author of this file, it contains function definitons to improve readability of Smart_Controller_Build.ino//
+
 #include <Arduino.h>
 #include <IRremote.hpp>
 #include "PinDefinitionsAndMore.h" // Sets I/O pins for IR communication
