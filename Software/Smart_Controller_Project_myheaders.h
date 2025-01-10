@@ -166,6 +166,7 @@ void update_HDMI_state(int _HDMI) {
 
 //IR Send Functions
 //IrSender.sendNEC(Device address, command, repeat number);
+//All addresses were found using TSOP384 reciever with IRREMOTE library using RecieveDump();
 void set_HDMI1_multiplexer() {
   IrSender.sendNEC(0x80, 0x2, 3);
 //  HDMI = 1;
