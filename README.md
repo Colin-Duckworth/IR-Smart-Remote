@@ -10,7 +10,11 @@ The IR Smart Remote utilizes an Arduino Uno board to interface with a variety of
 - **Power Efficient**: The system runs on a 9V battery, making it portable for use in various environments. The use of pull-up resistors ensures that the circuit consumes minimal power when the buttons are not being pressed, preserving battery life.
 - **Customizable Signals**: The IRREMOTE library makes it easy to overwrite or modify the IR signals that the smart remote sends out, allowing for flexible control and future expansion to other devices or protocols.
 - **Button Interface**: Simple press buttons are used for user interaction with the system.
-- **Indicator LEDs**: Visual feedback is provided with four indicator LEDs that show the current state of the system: -- POWER: Indicates whether the system is powered on. -- HDMI: Indicates the status of the HDMI device (on/off). -- MUTE: Indicates the mute status of the soundbar or other audio device. -- VOLUME: Indicates the volume status of the soundbar.
+- **Indicator LEDs**: Visual feedback is provided with four indicator LEDs that show the current state of the system:
+  - POWER: Indicates whether the system is powered on.
+  - HDMI: Indicates the status of the HDMI device (on/off).
+  - MUTE: Indicates the mute status of the soundbar or other audio device.
+  - VOLUME: Indicates the volume status of the soundbar.
 
 # Components Used
 - Arduino Uno microcontroller
