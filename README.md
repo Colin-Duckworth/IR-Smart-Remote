@@ -27,20 +27,21 @@ The IR Smart Remote utilizes an Arduino Uno board to interface with a variety of
 
 # Troubleshooting
 
-Problem 1: 
+Problem 1: LEDs Not Triggering Properly
 - The system was not responding consistently to the button interfaces, causing the LEDs to trigger incorrectly.
 - Added functionality to monitor the counters through the serial monitor while interfacing with the buttons.
 - Diagnosed the issue as button bouncing, which led to inconsistent counter updates.
 - Implemented debouncing delays to stabilize the button presses and ensure functional counters.
 - The issue was resolved, resulting in consistent LED triggering with stable button interactions.
 
-Problem 2:
+Problem 2: Loss of Saved State Data on Power Loss
+
 - The microcontroller lost track of the current state whenever it lost power, which was critical since the IR commands for power on and off were unique and not toggles.
 - Observed that the state data was lost upon power cycling, affecting the system’s ability to maintain its state.
 - Integrated EEPROM storage to save the necessary state variables, ensuring data retention even after power loss.
 - The system now retains its state after power loss, allowing it to boot up with the correct information.
 
-Problem 3:
+Problem 3: Inconsistent IR LED Communication
 - The IR LED was not consistently communicating with devices, especially at a distance.
 - Used an oscilloscope to verify the IR LED was sending the correct signal, but observed the signal strength was insufficient.
 - Determined that the microcontroller's output current (~20mA) was inadequate for the desired range, which required closer to 200mA.
