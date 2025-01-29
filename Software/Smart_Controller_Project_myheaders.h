@@ -5,7 +5,7 @@
 #include "PinDefinitionsAndMore.h" // Sets I/O pins for IR communication
 #include <EEPROM.h>
 
-//tell compiler variables and functions are declared in elsewhere
+//tell compiler variables and functions are declared in .ino file
 extern int HDMI;  
 extern int soundbar;
 extern int soundbar_mute;
@@ -166,6 +166,7 @@ void update_HDMI_state(int _HDMI) {
 
 //IR Send Functions
 //IrSender.sendNEC(Device address, command, repeat number);
+//All devices used were compatible with NEC IR protocol, so hash protocols were not necessary
 //All addresses were found using TSOP384 reciever with IRREMOTE library using RecieveDump();
 void set_HDMI1_multiplexer() {
   IrSender.sendNEC(0x80, 0x2, 3);
