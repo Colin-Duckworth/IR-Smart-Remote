@@ -24,7 +24,7 @@ int counters[] = {0, 0, 0, 0, 0};  //counters initialized to 0
 int signal_counters[] = {0, 0, 0, 0, 0};  //signal counter for serial monitor tracking
 String str;
 
-void print_serial_stuff(){
+void print_serial_stuff(){  //uncomment when using serial monitor window
   //prints button counter values
   //Serial.print(str + "button Counter values " + counters[0] + " " + counters[1] + " " + counters[2] +  " " + counters[3] +  " " + counters[4] + "\n");
   //prints signal send counter
