@@ -1,4 +1,3 @@
-//I am not the author of this software it is contained in the IRREMOTE Library, excellent software I strongly recommend//
 
 /*
  *  PinDefinitionsAndMore.h
